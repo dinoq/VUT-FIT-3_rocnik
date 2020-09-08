@@ -1,0 +1,28 @@
+Program WHOIS tazatel slouží jako WHOIS klient, zasílající dotazy na WHOIS server. Přijaté odpovědi program zpracuje a zobrazí uživateli v přehledné tabulce (v konzoli). Mimo to také zasílá dotazy na DNS server a získanou odpověď rovněž zpracuje a zobrazí přehledně uživateli.
+
+V rámci projektu jsem se rozhodl implementovat některé bonusové části zadání. Všechny zde zmíněná rozšíření se aktivují pouze v případě použití argumentu -e při spouštění programu. Bez tohoto argumentu funguje program velice jednoduše – pouze se DNS serveru dotáže na adresu, která byla specifikovaná argumentem -q a vypíše získané záznamy a podobně se zeptá na tuto adresu WHOIS serveru (specifikovaného argumentem -w) a vypíše odpověď (ořezanou pouze o prázdné řádky a komentáře). 
+
+Prvním (a nejjednodušším) rozšířením (v případě použití argumentu -e) je dotazování se WHOIS serveru na doménu s odstraněním/přidáním řetězce "www." k požadavku v případě, že WHOIS server nenalezl žádný záznam a zároveň byla jako požadavek zadána doména. Podobně je i DNS server dotazován i na doménu s odstraněním/přidáním řetězce "www." v případě, že byla jako požadavek (-q) zadána doména.
+
+Dalším rozšířením je dotazování se WHOIS serveru na všechny IP adresy (verze 4 i 6) příslušící k doméně, o které hledáme informace (specifikované v argumentu -q).
+
+Dále jsem implementoval dotaz i na doménu (získanou z DNS záznamu) v případě, že jako požadavek na WHOIS server (argument -q) byla uživatelem zadána IP adresa.
+
+V případě zadání IP adresy jako požadavku se rovněž nejprve DNS serveru zeptáme na PTR záznam pro získání domény a později se jej znovu dotazujeme na získanou doménu (pro získání ostatních DNS záznamů). Využívám zde tedy jisté rekurzivní dotazování.
+
+Překlad se provádí pomocí make.
+
+Příklady spouštění:
+./isa-tazatel -q www.fit.vutbr.cz -d dns.google.com -w whois.ripe.net
+./isa-tazatel -q seznam.cz -d dns.google.com -w whois.ripe.net -e -f -s
+
+Omezení:
+Projekt využívá knihovny resolv.c, která neumí pracovat s IPv6 adresami. Z toho důvodu program nefunguje pro IPv6 adresu, zadanou jako hodnotu argumentu programu -d.
+Ostatní funkce programu by měli být plně funkční
+
+Seznam odevzdaných souborů:
+isa-tazatel.c
+isa-tazatel.h
+Makefile
+manual.pdf
+Readme

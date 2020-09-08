@@ -1,0 +1,180 @@
+/*
+Autor: Petr Marek (xmarek69), Daniel Bílý (xbilyd01), Jakub Gajdo±ík (xgajdo24)
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D8E3FF;
+}
+
+
+
+#login {
+    width: 300px;
+    height: fit-content;
+    border: 1px solid #000055;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #014F92;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#login .hint{    
+    margin: 5px 0;
+    font-size: 1.1em;
+    text-align: left;    
+}
+
+#login input[type="submit"]{
+    display: block;   
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: darkred;
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    width: 70%;
+    height: fit-content;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#no_account {    
+    text-align: center;
+    margin-top: 0.3em;
+    color: royalblue;
+}
+
+#no_account a {
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#user_bar {
+    width: 150px;
+    height: 52px;
+    border-radius: 0 0 0 15px;
+    background-color: #014F92;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#user_bar img {
+    max-width: 32px;
+    padding: 10px 0;
+    padding-left: 30px;
+}
+
+nav {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 10%;
+}
+nav a {
+    background-color: #014F92;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+
+nav #active:not(:hover) {
+    background-color: #00AA73;
+}
+
+nav a:hover{
+    background-color: #4fc711;
+}
+
+main h1{
+    text-align: center;
+    font-size: 2em;
+    color: #014F92;
+    font-weight: normal;
+}
+
+main h2{
+    font-size: 1em;
+    text-align: center;
+}
+
+main p{
+    font-size: 1em;
+    text-align: center;
+}
+
+.message_for_user {
+    color: green;
+    text-align: center;
+}
+
+.error_for_user {
+    color: red;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 1.5em;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {    
+    background-color: rgb(240, 240, 240);
+}
+
+table tr:nth-child(odd) {    
+    background-color: rgb(225, 225, 225);
+}
+
+table tr:nth-child(odd) input[type="text"]::placeholder {    
+    color: rgb(136, 136, 136);
+}
+
+table tr:nth-child(even) input[type="text"]::placeholder {    
+    color: rgb(168, 168, 168);
+}
+
+table th {
+    padding: 10px;
+    background-color: #014F92;
+    color: white;
+    text-align: center;
+}
+
+form input[type="submit"],form button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #014F92;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    font-size: 1em;
+    padding: 5px 20px;
+}
+
+form input[type="submit"]:disabled,form button:disabled{
+    background-color: rgb(235, 235, 228);
+    color: rgb(84, 84, 84);
+    border: 1px solid darkgray;
+}
+
+

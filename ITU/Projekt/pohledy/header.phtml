@@ -1,0 +1,33 @@
+<header>
+	<div id="user_bar">
+	    <a href="index.php?akce=nastaveni"><img src="img/settings.png"></a>    
+	    <a href="skripty/logout.php"><img src="img/logout.png"></a>
+	</div>
+
+	<?php
+
+	    $sklad="";
+	    $prijem="";
+	    $vydej="";
+	    $historie="";
+	    $sprava="";
+	    if(isset($_GET) && isset($_GET['akce'])){
+	        if($_GET['akce'] == "sklad")
+	            $sklad = "active";
+	        if($_GET['akce'] == "prijem")
+	            $prijem = "active";
+	        if($_GET['akce'] == "vydej")
+	            $vydej = "active";
+	        if($_GET['akce'] == "historie")
+	            $historie = "active";
+	    }else{
+	        $sklad = "active";
+	    }
+	?>
+	<nav>
+	    <a href="?akce=sklad" id="<?php echo $sklad;?>">Sklad</a>
+	    <a href="?akce=prijem" id="<?php echo $prijem;?>">Pøíjem zbo¾í</a>
+	    <a href="?akce=vydej" id="<?php echo $vydej;?>">Výdej zbo¾í</a>
+	    <a href="?akce=historie" id="<?php echo $historie;?>">Historie</a>
+	</nav>
+</header>

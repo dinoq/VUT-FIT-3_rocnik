@@ -1,0 +1,37 @@
+/*
+Autor: Petr Marek (xmarek69), Daniel Bílý (xbilyd01), Jakub Gajdo±ík (xgajdo24)
+*/
+.spodni_ramecek {
+	border-bottom: 1px solid dimgray;
+}
+
+.pravy_ramecek {
+	border-right: 1px solid rgb(225, 225, 225);
+}
+
+.levy_ramecek {
+	border-left: 1px solid rgb(225, 225, 225);
+}
+
+#tabulka_zbozi {
+	max-width: 80%;
+}
+
+#vyhledavani_datum{
+	display: flex;
+	justify-content: center;
+}
+
+#vyhledavani_datum input{	
+    display: block;
+    height: 40px;
+    font-size: 20px;
+}
+
+#vyhledavani_datum div{
+	margin: 10px 10px;
+}
+
+label {
+    display:block;
+}

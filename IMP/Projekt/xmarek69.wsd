@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="workingsets.xsd">
+  <projects>
+    <project>
+      <name>bsp_fitkit</name>
+      <path>..\..\..\..\TEMP\test_mqx\Freescale_MQX_4_2_FITKIT_KDS300\mqx\build\kds\bsp_fitkit</path>
+      <open>true</open>
+      <activeconfig>debug</activeconfig>
+      <buildreferences config="debug">false</buildreferences>
+      <buildreferences config="release">false</buildreferences>
+    </project>
+    <project>
+      <name>hid_mouse_dev_fitkit</name>
+      <path>..\..\..\..\TEMP\test_mqx\Freescale_MQX_4_2_FITKIT_KDS300\usb\device\examples\hid\mouse\build\kds\hid_mouse_dev_fitkit</path>
+      <open>true</open>
+      <activeconfig>int flash debug</activeconfig>
+      <buildreferences config="int flash debug">false</buildreferences>
+      <buildreferences config="int flash release">false</buildreferences>
+    </project>
+    <project>
+      <name>psp_fitkit</name>
+      <path>..\..\..\..\TEMP\test_mqx\Freescale_MQX_4_2_FITKIT_KDS300\mqx\build\kds\psp_fitkit</path>
+      <open>true</open>
+      <activeconfig>debug</activeconfig>
+      <buildreferences config="debug">false</buildreferences>
+      <buildreferences config="release">false</buildreferences>
+    </project>
+    <project>
+      <name>usbd_fitkit</name>
+      <path>..\..\..\..\TEMP\test_mqx\Freescale_MQX_4_2_FITKIT_KDS300\usb\device\build\kds\usbd_fitkit</path>
+      <open>true</open>
+      <activeconfig>debug</activeconfig>
+      <buildreferences config="debug">false</buildreferences>
+      <buildreferences config="release">false</buildreferences>
+    </project>
+  </projects>
+  <workingsets>
+    <workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" id="1577053065962_1" label="hid_mouse_dev_fitkit" name="hid_mouse_dev_fitkit"> 
+      <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/bsp_fitkit" type="4"/>  
+      <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/psp_fitkit" type="4"/>  
+      <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/usbd_fitkit" type="4"/>  
+      <item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/hid_mouse_dev_fitkit" type="4"/> 
+    </workingSet>
+  </workingsets>
+  <cdtconfigurations>
+    <workingSet name="hid_mouse_dev_fitkit"> 
+      <config name="debug"> 
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="psp_fitkit" configName="debug"/>  
+        <project config="com.freescale.arm.cdt.toolchain.config.arm.release.695495605" name="hid_mouse_dev_fitkit"/>  
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="usbd_fitkit" configName="debug"/>  
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.debug.202482942" name="bsp_fitkit" configName="debug"/> 
+      </config>  
+      <config name="release"> 
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="psp_fitkit" configName="release"/>  
+        <project config="com.freescale.arm.cdt.toolchain.config.arm.release.695495605" name="hid_mouse_dev_fitkit"/>  
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="usbd_fitkit" configName="release"/>  
+        <project config="ilg.gnuarmeclipse.managedbuild.cross.config.lib.release.1709515315" name="bsp_fitkit" configName="release"/> 
+      </config> 
+    </workingSet>
+  </cdtconfigurations>
+</workspace>

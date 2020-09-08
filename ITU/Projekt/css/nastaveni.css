@@ -1,0 +1,8 @@
+/*
+Autor: Petr Marek (xmarek69), Daniel Bílý (xbilyd01), Jakub Gajdo±ík (xgajdo24)
+*/
+
+#nastaveni #properties_table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
