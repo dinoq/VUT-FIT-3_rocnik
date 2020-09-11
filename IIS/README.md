@@ -1,7 +1,7 @@
 IIS - Informační systémy  
 Projekt - Návrh a implementace informačního systému (28b z 30)  
 Projekt byl řešen v 3 členném týmu  
-Použito PHP (framework CodeIgniter), HTML, CSS, MySQL , architektura MVC
+Použito PHP (framework CodeIgniter), HTML, CSS, MySQL, architektura MVC
 Detaily implementace viz soubor Projekt/Projekt IIS.html
 
 # Výběr zadání
